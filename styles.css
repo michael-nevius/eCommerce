@@ -9,8 +9,16 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 50;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -27,4 +35,78 @@ html {
 .aboutus {
     display: flex;
     flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #BF7631;
+}
+
+.links {
+    background-color: white;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.links > a {
+	color: #9ab;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+
+
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+
+.navlist{
+    display: inline-flex;
+    font-size: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
+    list-style: none;
+}
+
+.navlist{
+    max-width: 1080px;
+    font-size: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.magglass{
+    height: 20px;
+    position: relative;
+    right: 2rem;
+}
+
+.search{
+    position: absolute;
+    right: 10rem;
+}
+
+.cart{
+    position: absolute;
+    right: 5px;
 }

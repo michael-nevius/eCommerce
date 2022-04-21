@@ -8,28 +8,30 @@
     <title>CARA CARA</title>
 </head>
 <body>
-    <header class="header">
-        <h1>CARA CARA</h1>
-        <div>
-            <img src="./assets/UX-HTML-CSS/icons8-pottery-96.png" alt="Orange vase">
-        </div>
-        <nav>
-           <ul>
-               <li> <a href="#home">HOME</a></li>
-               <li> <a href="#about">ABOUT</a></li>
-               <li> <a href="#products">PRODUCTS</a></li>
-               <li> <a href="#contact">CONTACT</a></li> 
-           </ul>
+    <header class="header" id="header">
+        <a href="#"><h1>CARA<img src="./assets/UX-HTML-CSS/icons8-pottery-96.png" alt="Orange vase"> CARA</h1></a>
+        <nav class="links" style="--items: 7;">            
+               <ul class="navlist">
+                    <li> <a href="#home">HOME</a></li>
+                    <li> <a href="#about">ABOUT</a></li>
+                    <li> <a href="#products">PRODUCTS</a></li>
+                    <li> <a href="#contact">CONTACT</a></li>
+                    <li>
+                        <div class="search">
+                        <input type="text" title="Search">
+                            <img class="magglass" src="./assets/UX-HTML-CSS/1200px-Google_Magnifying_Glass.svg.png" alt="magnifying glass" style="height: 30px;">
+                        </div>
+                    </li>
+                    <li><a href="#"></a><h2>CART (0)</h2></li>
+                </ul>
+            </div>                       
         </nav>
-        <input type="text">
-        <div>
-            <img src="./assets/UX-HTML-CSS/1200px-Google_Magnifying_Glass.svg.png" alt="Magnifying Glass">
-        </div>
-        <h3>CART (0)</h3>
+
+        
     </header>
     
     <main>
-        <div class="home" id="Home">
+        <div class="home" id="home">
             <div>
                 CERAMICS CRAFTED BY HAND...
             </div>
@@ -41,7 +43,7 @@
             </div>
         </div>
         <h2>ABOUT US</h2>
-        <div class="aboutus" id="AboutUs">
+        <div class="aboutus" id="about">
             
               <div>
                 <img src="./assets/UX-HTML-CSS/Vase_Dame_2048x2048.jpg" alt="Flowers in a vase">
@@ -67,102 +69,103 @@
             </div>
         </div>
 
-        <h2>OUR PRODUCTS</h2>
-        <div class="products" id="Our Products">
+        
+        <div class="products" id="products">
+                <div><h2>OUR PRODUCTS</h2></div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-7HuTGlUfQSo-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="White bowl with two little white bowls" style="width:100%">
                     </a>
-                    <h1>MUNDO BOWLS</h1>
+                    <h3>MUNDO BOWLS</h3>
                     <p class="price">$48.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/oriento-maVIpNNtmlQ-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/oriento-maVIpNNtmlQ-unsplash.jpg" alt="Purple Vase" style="width:100%">
                     </a>
-                    <h1>NATUREZA VASE</h1>
+                    <h3>NATUREZA VASE</h3>
                     <p class="price">$37.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-bgIO-u4GEfI-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="White bowls with black speckles" style="width:100%">
                     </a>
-                    <h1>FEIRA BOWLS</h1>
+                    <h3>FEIRA BOWLS</h3>
                     <p class="price">$29.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-3uwu5K0RtaE-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="Tan pots with lids" style="width:100%">
                     </a>
-                    <h1>NATUREZA POTS</h1>
+                    <h3>NATUREZA POTS</h3>
                     <p class="price">$59.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/linh-le-a0rE64YJDA4-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/linh-le-a0rE64YJDA4-unsplash.jpg" alt="White Vase" style="width:100%">
                     </a>
-                    <h1>PEDRA VASE</h1>
+                    <h3>PEDRA VASE</h3>
                     <p class="price">$31.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-oiZAQvxTcYQ-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="Weathered pots with lids" style="width:100%">
                     </a>
-                    <h1>VIAJA POTS</h1>
+                    <h3>VIAJA POTS</h3>
                     <p class="price">$57.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-YA2E3d7a9Wo-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="White plates with speckles" style="width:100%">
                     </a>
-                    <h1>SERVIÇO PLATES</h1>
+                    <h3>SERVIÇO PLATES</h3>
                     <p class="price">$35.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/oriento-l0ah3UBLppo-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/oriento-l0ah3UBLppo-unsplash.jpg" alt="Teal vase" style="width:100%">
                     </a>
-                    <h1>CAMPEÃO VASE</h1>
+                    <h3>CAMPEÃO VASE</h3>
                     <p class="price">$37.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
                 <div class="card">
                     <a href="./assets/UX-HTML-CSS/tom-crew-SITGdvztUdg-unsplash.jpg">
                         <img src="./assets/UX-HTML-CSS/tom-crew-SITGdvztUdg-unsplash.jpg" alt="Plain White bowls" style="width:100%">
                     </a>
-                    <h1>TROCA BOWLS</h1>
+                    <h3>TROCA BOWLS</h3>
                     <p class="price">$25.00</p>
                     <p>Tincidunt praesent semper feugiat nibh sed. Vulputate mi sit amet mauris commodo quis imperdiet massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.</p>
                     <a href="#">LEARN MORE</a>
                     <p><button>Add to Cart</button></p>
-                  </div>
+                </div>
         </div>
             
         
-        <div class="contact" id="Contact Us">
+        <div class="contact" id="contact">
             <h2>CONTACT US</h2>
             <form>
                 Email: <input type="text">
@@ -174,11 +177,8 @@
       
     </main>
     
-    <footer>
-        <h2>CARA CARA</h2>
-        <a href="#">
-            <img src="./assets/UX-HTML-CSS/icons8-pottery-96 (1).png" alt="White Pot">
-        </a>
+    <footer class="footer" id="footer">
+        <a href="#"></a><h2>CARA<img src="./assets/UX-HTML-CSS/icons8-pottery-96 (1).png" alt="White Pot">CARA</h2></a>
         <div class="socialmedia" id="YF Logo">
             <a href="#">
                 <img src="./assets/UX-HTML-CSS/icons8-youtube-96.png" alt="Youtube logo">
@@ -195,15 +195,9 @@
                 <img src="./assets/UX-HTML-CSS/icons8-instagram-96.png" alt="Instagram logo">
             </a>
             <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </p>
-                <p>
-                    ©Copyright 2015 - 2020
-                </p>
+                <span>ipsum dolor sit amet consectetur, adipisicing elit.</span> 
+                <span>ipsum dolor sit amet consectetur, adipisicing elit.</span> 
+                <span>©Copyright 2015 - 2020</span> 
             </div>
 
         </div>
